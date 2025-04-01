@@ -1,0 +1,58 @@
+/* Conteneur de la grille */
+.grid-container {
+    display: grid; /* Active le mode grid */
+    grid-template-columns: 1fr 1fr 1fr; /* 3 colonnes de largeur égale */
+    grid-template-rows: 1fr 1fr 1fr; /* 3 lignes de hauteur égale */
+    height: 100vh; /* La hauteur du conteneur prend 100% de la hauteur de la fenêtre */
+    grid-gap: 10px; /* Espacement entre les éléments */
+}
+
+/* Style pour tous les éléments de la grille */
+.grid-container > div {
+    display: flex; /* Utilisation de Flexbox pour centrer le contenu */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    background-color: rgb(124, 236, 130); /* Couleur de fond des éléments */
+    color: white; /* Couleur du texte */
+    font-size: 2rem; /* Taille du texte */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+/* Positionnement spécifique des éléments */
+
+/* Élément 1 en haut à gauche */
+.grid-item1 {
+    grid-column: 1; /* 1ère colonne */
+    grid-row: 1; /* 1ère ligne */
+}
+
+/* Élément 2 au centre de la page */
+.grid-item2 {
+    grid-column: 2; /* 2ème colonne */
+    grid-row: 2; /* 2ème ligne */
+}
+
+/* Élément 3 en bas à droite */
+.grid-item3 {
+    grid-column: 3; /* 3ème colonne */
+    grid-row: 3; /* 3ème ligne */
+}
+
+/* Élément 4 en haut à droite */
+.grid-item4 {
+    grid-column: 3; /* 3ème colonne */
+    grid-row: 1; /* 1ère ligne */
+}
+
+/* Élément 5 en bas à gauche */
+.grid-item5 {
+    grid-column: 1; /* 1ère colonne */
+    grid-row: 3; /* 3ème ligne */
+}
+
+/* Élément 6 dans un endroit libre (centre en bas ici) */
+.grid-item6 {
+    grid-column: 2; /* 2ème colonne */
+    grid-row: 3; /* 3ème ligne */
+}
+
