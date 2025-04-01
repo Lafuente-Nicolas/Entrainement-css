@@ -1,0 +1,51 @@
+
+
+/* Style des boîtes */
+.box1{
+     width: 98%; /* La boîte prendra 98% de la largeur de son parent (le conteneur) */
+     height: 10%; /* La hauteur de la boîte sera 10% de la hauteur de son parent */
+        
+     display: flex; /* Utilisation de Flexbox pour la disposition des éléments internes */
+     justify-content: center; /* Centre horizontalement le contenu à l’intérieur de la boîte */
+     align-items: center; /* Centre verticalement le contenu à l’intérieur de la boîte */
+        
+     color: white; /* Définit la couleur du texte à blanc */
+     background-color: steelblue; /* Définit la couleur de fond de la boîte en bleu acier */
+        
+     font-size: 20px; /* Définit la taille du texte à 20px */
+    border-radius: 5px; /* Arrondit les coins de la boîte avec un rayon de 5px */
+        
+     position: absolute; /* Positionne la boîte de manière absolue par rapport à son conteneur parent */
+    
+}
+.box2{
+    width: 20%;
+    height: 86%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    position: absolute;
+}
+.box3{
+    width: 78%;
+    height: 86%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: mediumseagreen;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    position: absolute;
+}
+
+/* Positionnement des boîtes */
+.box1 { top: 20px; left: 20px; }/* En haut à gauche */
+.box2 { bottom: 20px; left: 20px; } /* En bas à gauche */
+.box3 { bottom: 20px ; right: 20px } /* En bas à droite */
+
+
